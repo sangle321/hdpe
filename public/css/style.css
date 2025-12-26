@@ -16,9 +16,10 @@ body {
 
 /* Header */
 header {
-    background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+    /* background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%); */
+    background: white;
     color: white;
-    padding: 1rem 0;
+    /* padding: 1rem 0; */
     position: fixed;
     width: 100%;
     top: 0;
@@ -41,14 +42,12 @@ header {
 }
 
 .logo_company img {
-    height: 80px;
+    height: 90px;
     /* Increased size for desktop */
     width: auto;
     object-fit: contain;
     background: white;
-    padding: 5px;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 nav {
@@ -58,7 +57,7 @@ nav {
 }
 
 nav a {
-    color: white;
+    color: #2c5aa0;
     text-decoration: none;
     transition: color 0.3s;
     font-weight: 500;
@@ -78,7 +77,7 @@ nav a:hover {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, rgba(30, 58, 138, 0.9), rgba(37, 99, 235, 0.9)),
+    background: linear-gradient(135deg, rgba(71, 109, 214, 0.9), rgba(78, 119, 207, 0.9)),
         url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23dbeafe" width="1200" height="600"/><circle cx="200" cy="150" r="80" fill="%233b82f6" opacity="0.1"/><circle cx="900" cy="400" r="120" fill="%232563eb" opacity="0.1"/><rect x="100" y="300" width="200" height="150" fill="%231e40af" opacity="0.1"/></svg>');
     background-size: cover;
     background-position: center;
@@ -241,7 +240,7 @@ section {
 
 /* USP Section */
 .usp {
-    background: linear-gradient(135deg, #1e3a8a, #2563eb);
+    background: linear-gradient(135deg, rgba(71, 109, 214, 0.9), rgba(78, 119, 207, 0.9));
     color: white;
 }
 
@@ -711,4 +710,20 @@ footer {
 
 .map-container iframe {
     display: block;
+}
+
+@media (max-width: 768px) {
+    .logo_company img {
+        height: 90px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding-bottom: 8px;
+    }
+
+    .logo_company img {
+        height: 90px;
+    }
 }

@@ -4,8 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trường Thọ QB - Giải Pháp Ống Nước Bền Vững</title>
+  <title>Ống Nhựa Miền Trung - Giải Pháp Ống Nước Bền Vững</title>
   <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
 </head>
 
 <body>
@@ -13,7 +15,7 @@
   <header>
     <div class="header-container">
       <div class="logo_company">
-        <a href="#home"><img src="images/logo.png" alt="Trường Thọ QB"></a>
+        <a href="#home"><img src="images/logo.png" alt="Ống nhựa Miền Trung"></a>
       </div>
       <nav>
         <a href="#home">Trang chủ</a>
@@ -29,7 +31,7 @@
   <!-- Hero Section -->
   <section class="hero" id="home">
     <h1>Giải Pháp Ống Nước Bền Vững Cho Mọi Công Trình</h1>
-    <p>Nhà phân phối chính hãng ống nước & phụ kiện tại Quảng Bình<br>
+    <p>Nhà phân phối chính hãng ống nước & phụ kiện tại Miền Trung<br>
       Cam kết chất lượng - Giá thành cạnh tranh</p>
     <div class="cta-buttons">
       <a href="#" class="btn btn-primary" onclick="return openQuoteForm()">Nhận Báo Giá Ngay</a>
@@ -41,7 +43,7 @@
   <section class="about" id="about">
     <h2 class="section-title">Về Chúng Tôi</h2>
     <div class="about-content">
-      <p>Trường Thọ QB tự hào là đơn vị uy tín hàng đầu chuyên cung cấp và phân phối các loại ống nước, phụ kiện
+      <p>Ống nhựa Miền Trung tự hào là đơn vị uy tín hàng đầu chuyên cung cấp và phân phối các loại ống nước, phụ kiện
         ngành nước chính hãng. Với phương châm lấy chất lượng làm gốc, chúng tôi cam kết mang đến những giải
         pháp dẫn nước an toàn, bền bỉ theo thời gian cho hàng trăm công trình dân dụng và công nghiệp.</p>
     </div>
@@ -79,18 +81,6 @@
         </div>
       </div>
 
-      <!-- <div class="product-card">
-        <div class="product-image">
-          <img src="images/ppr_pipe.png" alt="Ống Nhựa Chịu Nhiệt PPR">
-        </div>
-        <div class="product-content">
-          <h3>Ống Nhựa Chịu Nhiệt PPR</h3>
-          <p>An toàn vệ sinh thực phẩm, chịu nhiệt độ cao, giải pháp hoàn hảo cho hệ thống nước nóng lạnh.</p>
-          <a href="product-detail.html?id=ppr" class="btn btn-primary"
-            style="padding: 0.7rem 2rem; font-size: 1rem;">Xem Chi
-            Tiết</a>
-        </div>
-      </div> -->
     </div>
   </section>
 
@@ -107,7 +97,7 @@
       <div class="usp-item">
         <div class="usp-icon">💎</div>
         <h3>Chất Lượng</h3>
-        <p>Sản phẩm chính hãng 100% </p>
+        <p>Sản phẩm chính hãng 100%, Chứng nhận hợp chuẩn (theo TCVN/ISO), chất lượng vượt trội </p>
       </div>
 
       <div class="usp-item">
@@ -159,7 +149,7 @@
     <h2 class="section-title">Bản Đồ Chỉ Đường</h2>
     <div class="map-container">
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3809.776119970898!2d106.79374177593834!3d17.278062905943866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3140b36cd8f50fd5%3A0x3538a96534368aed!2zQ-G7rWEgaMOgbmcgWMSDbmcgZOG6p3UgUGV0cm9saW1leCAtIFRyxrDhu51uZyBUaOG7jSBRQg!5e0!3m2!1svi!2s!4v1766562505884!5m2!1svi!2s"
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d51253.994801665205!2d106.84559237681194!3d17.292570046132166!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3140b30028e22e63%3A0x3213e2f7c8b6ee58!2zTmjDoCBtw6F5IHPhuqNuIHh14bqldCDhu5BuZyBuaOG7sWEgTWnhu4FuIFRydW5n!5e0!3m2!1svi!2s!4v1766644597330!5m2!1svi!2s"
         width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy">
       </iframe>
     </div>
@@ -214,25 +204,24 @@
       <form onsubmit="submitQuote(event)">
         <div class="form-group">
           <label>Họ và Tên *</label>
-          <input type="text" required placeholder="Nhập họ tên của bạn">
+          <input type="text" id="quoteName" required placeholder="Nhập họ tên của bạn">
         </div>
         <div class="form-group">
           <label>Số Điện Thoại *</label>
-          <input type="tel" required placeholder="Nhập số điện thoại">
+          <input type="tel" id="quotePhone" required placeholder="Nhập số điện thoại">
         </div>
         <div class="form-group">
           <label>Loại Sản Phẩm *</label>
-          <select required>
+          <select id="quoteProduct" required>
             <option value="">-- Chọn loại ống --</option>
-            <option value="pvc">Ống Nhựa PVC</option>
             <option value="hdpe">Ống Nhựa HDPE</option>
-            <option value="ppr">Ống Nhựa PPR</option>
+            <option value="pvc">Ống Nhựa PVC</option>
             <option value="other">Khác</option>
           </select>
         </div>
         <div class="form-group">
           <label>Ghi Chú</label>
-          <textarea rows="3" placeholder="Nhập yêu cầu chi tiết (nếu có)"></textarea>
+          <textarea id="quoteNote" rows="3" placeholder="Nhập yêu cầu chi tiết (nếu có)"></textarea>
         </div>
         <button type="submit" class="btn btn-primary" style="width: 100%;">Gửi Yêu Cầu</button>
       </form>
