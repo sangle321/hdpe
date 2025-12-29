@@ -397,7 +397,7 @@ footer {
     align-items: center;
     justify-content: center;
     color: white;
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     cursor: pointer;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     transition: all 0.3s;
@@ -477,7 +477,7 @@ footer {
     .floating-btn {
         width: 50px;
         height: 50px;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 }
 
@@ -726,4 +726,9 @@ footer {
     .logo_company img {
         height: 90px;
     }
+
+    .hero h1 {
+        padding-top: 5rem;
+    }
 }
+
