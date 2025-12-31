@@ -30,7 +30,7 @@ async function submitQuote(event) {
         phone_number: document.getElementById('quotePhone').value,
         product_type: document.getElementById('quoteProduct').value,
         message: document.getElementById('quoteNote').value,
-        to_email: 'sang.lv@softworld.jp'
+        to_email: 'onghdpemientrung@gmail.com'
     };
 
     const submitBtn = event.target.querySelector('button[type="submit"]');

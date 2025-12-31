@@ -1,28 +1,4 @@
 const products = {
-    "pvc": {
-        name: "Ống Nhựa PVC Trường Thọ",
-        sku: "PVC-001",
-        description: "Ống nhựa uPVC được sản xuất trên dây chuyền hiện đại, đạt tiêu chuẩn quốc tế. Sản phẩm có độ bền cơ học cao, chịu va đập tốt, không bị rỉ sét, không đóng cặn, bảo đảm vệ sinh nguồn nước.",
-        image: "images/pvc_pipe.png",
-        features: [
-            "Chịu áp lực cao, tuổi thọ lên đến 50 năm",
-            "Nhẹ nhàng, dễ vận chuyển và lắp đặt",
-            "Kháng hóa chất, không bị ăn mòn",
-            "Mặt trong nhẵn, hệ số ma sát nhỏ"
-        ],
-        specsHeader: ["Đường Kính (DN)", "Đường Kính Ngoài (OD)", "Độ Dày (mm)", "Áp Suất (PN)", "Chiều Dài (m)"],
-        specsData: [
-            ["15", "21mm", "1.6", "15", "4"],
-            ["20", "27mm", "1.8", "15", "4"],
-            ["25", "34mm", "2.0", "12", "4"],
-            ["32", "42mm", "2.1", "12", "4"],
-            ["40", "48mm", "2.3", "12", "4"],
-            ["50", "60mm", "2.3", "9", "4"],
-            ["65", "75mm", "2.9", "9", "4"],
-            ["80", "90mm", "2.9", "6", "4"],
-            ["100", "110mm", "3.2", "6", "4"]
-        ]
-    },
     "hdpe": {
         name: "Ống Nhựa HDPE Chính Hãng",
         sku: "HDPE-002",
@@ -94,27 +70,6 @@ const products = {
             ["16", "D250", "9.6", "11.9", "14.8", "18.4", "22.7", "27.9"],
             ["17", "D280", "10.7", "13.4", "16.6", "20.6", "25.4", "31.3"],
             ["18", "D315", "12.1", "15.0", "18.7", "23.2", "28.6", "35.2"]
-        ]
-    },
-    "ppr": {
-        name: "Ống Nhựa Chịu Nhiệt PPR",
-        sku: "PPR-003",
-        description: "Ống nhựa chịu nhiệt PPR được làm từ nhựa Polypropylene Random Copolymer, chuyên dùng cho hệ thống dẫn nước nóng và lạnh dân dụng. Đảm bảo an toàn vệ sinh thực phẩm cao nhất.",
-        image: "images/ppr_pipe.png",
-        features: [
-            "Chịu nhiệt độ cao (lên tới 95°C)",
-            "Giữ nhiệt tốt, tiết kiệm năng lượng",
-            "An toàn vệ sinh thực phẩm tuyệt đối",
-            "Mối nối hàn nhiệt đồng chất, chống rò rỉ"
-        ],
-        specsHeader: ["Đường Kính (DN)", "Độ Dày (Nước Lạnh)", "Độ Dày (Nước Nóng)", "Quy Cách"],
-        specsData: [
-            ["20", "2.3mm (PN10)", "3.4mm (PN20)", "4m/cây"],
-            ["25", "2.8mm (PN10)", "4.2mm (PN20)", "4m/cây"],
-            ["32", "3.6mm (PN10)", "5.4mm (PN20)", "4m/cây"],
-            ["40", "4.5mm (PN10)", "6.7mm (PN20)", "4m/cây"],
-            ["50", "5.6mm (PN10)", "8.3mm (PN20)", "4m/cây"],
-            ["63", "7.1mm (PN10)", "10.5mm (PN20)", "4m/cây"]
         ]
     }
 };
