@@ -79,73 +79,77 @@
     </section>
 
     <!-- Footer -->
-    <footer id="contact">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>CÔNG TY TNHH TRƯỜNG THỌ QB</h3>
-                <p>📍 Địa chỉ: [Xã Cam Hồng, Tỉnh Quảng Trị]</p>
-                <p>📧 Email: contact@truongthoqb.vn</p>
-                <p>📞 Hotline/Zalo: 0913477799</p>
-            </div>
+  <footer id="contact">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>CÔNG TY TNHH TRƯỜNG THỌ QB</h3>
+        <p>📍 Địa chỉ: Xã Cam Hồng, Tỉnh Quảng Trị</p>
+        <p>📧 Email: onghdpemientrung@gmail.com</p>
+        <p>📞 Hotline/Zalo: 0913477799</p>
+        <!-- <div class="social-links">
+          <a href="#">F</a>
+          <a href="#">Zalo</a>
+        </div> -->
+      </div>
 
-            <div class="footer-section">
-                <h3>Liên Kết Nhanh</h3>
-                <a href="index.html#about">Giới thiệu</a>
-                <a href="index.html#products">Sản phẩm</a>
-                <a href="index.html#projects">Dự án</a>
-                <a href="#">Chính sách bảo hành</a>
-                <a href="#">Chính sách vận chuyển</a>
-            </div>
+      <div class="footer-section">
+        <h3>Liên Kết Nhanh</h3>
+        <a href="#about">Giới thiệu</a>
+        <a href="#products">Sản phẩm</a>
+        <a href="#projects">Dự án</a>
+        <a href="#">Chính sách bảo hành</a>
+        <a href="#">Chính sách vận chuyển</a>
+      </div>
 
-            <div class="footer-section">
-                <h3>Giờ Làm Việc</h3>
-                <p>Thứ 2 - Thứ 6: 7:30 - 17:30</p>
-                <p>Thứ 7: 7:30 - 12:00</p>
-                <p>Chủ nhật: Nghỉ</p>
-            </div>
-        </div>
-        <div class="copyright">
-            <p>&copy; 2025 Trường Thọ QB. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <!-- Floating Buttons -->
-    <div class="floating-buttons">
-        <a href="tel:0913477799" class="floating-btn btn-call" title="Gọi ngay">📞</a>
-        <a href="https://zalo.me/0913477799" class="floating-btn btn-zalo" title="Chat Zalo">Zalo</a>
+      <div class="footer-section">
+        <h3>Giờ Làm Việc</h3>
+        <p>Thứ 2 - Thứ 7: 7:30 - 17:30</p>
+        <p>Chủ nhật: Nghỉ</p>
+      </div>
     </div>
-
-    <!-- Quote Form Modal -->
-    <div id="quoteModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeQuoteForm()">&times;</span>
-            <h2 style="color: #1e3a8a; margin-bottom: 1.5rem;">Đăng Ký Nhận Báo Giá</h2>
-            <form onsubmit="submitQuote(event)">
-                <div class="form-group">
-                    <label>Họ và Tên *</label>
-                    <input type="text" required placeholder="Nhập họ tên của bạn">
-                </div>
-                <div class="form-group">
-                    <label>Số Điện Thoại *</label>
-                    <input type="tel" required placeholder="Nhập số điện thoại">
-                </div>
-                <div class="form-group">
-                    <label>Loại Sản Phẩm *</label>
-                    <select required>
-                        <option value="">-- Chọn loại ống --</option>
-                        <option value="hdpe">Ống HDPE Dạng Thẳng</option>
-                        <option value="hdpe">Ống HDPE Dạng Cuộn</option>
-                        <option value="other">Khác</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label>Ghi Chú</label>
-                    <textarea rows="3" placeholder="Nhập yêu cầu chi tiết (nếu có)"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary" style="width: 100%;">Gửi Yêu Cầu</button>
-            </form>
-        </div>
+    <div class="copyright">
+      <p>&copy; 2025 Trường Thọ QB. All rights reserved.</p>
     </div>
+  </footer>
+
+  <!-- Floating Buttons -->
+  <div class="floating-buttons">
+    <a href="tel:0913477799" class="floating-btn btn-call" title="Gọi ngay">📞</a>
+    <a href="https://zalo.me/0913477799" class="floating-btn btn-zalo" title="Chat Zalo">Zalo</a>
+  </div>
+
+  <!-- Quote Form Modal -->
+  <div id="quoteModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeQuoteForm()">&times;</span>
+      <h2 style="color: #1e3a8a; margin-bottom: 1.5rem;">Đăng Ký Nhận Báo Giá</h2>
+      <form onsubmit="submitQuote(event)">
+        <div class="form-group">
+          <label>Họ và Tên *</label>
+          <input type="text" id="quoteName" required placeholder="Nhập họ tên của bạn">
+        </div>
+        <div class="form-group">
+          <label>Số Điện Thoại *</label>
+          <input type="tel" id="quotePhone" required placeholder="Nhập số điện thoại">
+        </div>
+        <div class="form-group">
+          <label>Loại Sản Phẩm *</label>
+          <select id="quoteProduct" required>
+            <option value="">-- Chọn loại ống --</option>
+            <option value="hdpe">Ống HDPE Dạng Thẳng</option>
+            <option value="hdpe">Ống HDPE Dạng Cuộn</option>
+            <option value="other">Khác</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Ghi Chú</label>
+          <textarea id="quoteNote" rows="3" placeholder="Nhập yêu cầu chi tiết (nếu có)"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%;">Gửi Yêu Cầu</button>
+      </form>
+    </div>
+  </div>
+
 
     <script src="js/product-data.js"></script>
     <script src="js/product-detail.js"></script>
