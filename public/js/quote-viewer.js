@@ -33,28 +33,8 @@ document.addEventListener('DOMContentLoaded', () => {
         breadcrumbCurrent.textContent = quoteInfo.title;
 
         // Create PDF Viewer
-        const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-
         if (pdfUrl.includes('drive.google.com')) {
-            if (isMobile) {
-                pdfContainer.innerHTML = `
-                    <div class="fallback-message">
-                        <p>Trình xem PDF có thể bị hạn chế trên di động.</p>
-                        <a href="${pdfUrl.replace('/preview', '/view')}" target="_blank" class="btn btn-primary" style="margin-top: 1rem;">Mở bằng Google Drive</a>
-                    </div>
-                    <iframe src="${pdfUrl}" class="pdf-viewer" allow="autoplay" style="margin-top: 1rem;"></iframe>
-                `;
-            } else {
-                pdfContainer.innerHTML = `<iframe src="${pdfUrl}" class="pdf-viewer" allow="autoplay"></iframe>`;
-            }
-        } else if (isMobile) {
-            pdfContainer.innerHTML = `
-                <div class="fallback-message">
-                    <p>Bạn đang sử dụng thiết bị di động. Nếu trình xem không hiển thị, vui lòng tải trực tiếp.</p>
-                    <a href="${pdfUrl}" class="btn btn-primary" style="margin-top: 1rem;">Mở Tệp PDF</a>
-                </div>
-                <iframe src="https://docs.google.com/viewer?url=${encodeURIComponent(window.location.origin + '/' + pdfUrl)}&embedded=true" class="pdf-viewer"></iframe>
-            `;
+            pdfContainer.innerHTML = `<iframe src="${pdfUrl}" class="pdf-viewer" allow="autoplay"></iframe>`;
         } else {
             pdfContainer.innerHTML = `<iframe src="${pdfUrl}#toolbar=0" class="pdf-viewer"></iframe>`;
         }
