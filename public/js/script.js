@@ -17,9 +17,9 @@ async function submitQuote(event) {
     event.preventDefault();
 
     // Configuration - Replace with your EmailJS IDs
-    const SERVICE_ID = "<SERVICE_ID>";
-    const TEMPLATE_ID = "<TEMPLATE_ID>";
-    const PUBLIC_KEY = "<PUBLIC_KEY>";
+    const SERVICE_ID = "service_0ixrcy8";
+    const TEMPLATE_ID = "template_76qo7nm";
+    const PUBLIC_KEY = "hvOajR8rqBEukekYj";
 
     // Initialize EmailJS (can also be done globally)
     emailjs.init(PUBLIC_KEY);
