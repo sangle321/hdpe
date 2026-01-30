@@ -5,15 +5,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const pdfMap = {
         'hdpe_pk_tn.pdf': {
             title: 'Báo Giá Phụ Kiện HDPE Hàn Trong - Ngoài',
-            file: 'https://drive.google.com/file/d/15LGBp_JSq-sAa5tsWhrNnp8pQVwl-96A/preview'
+            file: 'https://drive.google.com/file/d/1LvEl7zPyk4By3BsdI4fvhnVmenLbaZPI/preview'
         },
         'hdpe_pk_sg.pdf': {
             title: 'Báo Giá Phụ Kiện HDPE Siết Gioăng',
-            file: 'https://drive.google.com/file/d/19vAuuH2gTlv9Qxh3Z7q6wGQy4-_F6h1u/preview'
+            file: 'https://drive.google.com/file/d/1Fuv67rPkbvIKOdfI41xsVR8ds1_3ejdQ/preview'
         },
         'hdpe_van.pdf': {
             title: 'Báo Giá Van HDPE',
-            file: 'https://drive.google.com/file/d/1heGS5EN9C04HMZrfbJCaMXfT3VMnnK_c/preview'
+            file: 'https://drive.google.com/file/d/1-nS1Rpz2eL2LfkXt-Uj7vQfY_RX2wHxl/preview'
         }
     };
 
