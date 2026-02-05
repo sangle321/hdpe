@@ -3,6 +3,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const quoteId = urlParams.get('id');
 
     const pdfMap = {
+        'hdpe.pdf': {
+            title: 'Báo Giá Ống Nhựa HDPE',
+            file: 'https://drive.google.com/file/d/1DWtSKLPsVvrbUQuaCWUqlbIPU11MSF_D/preview'
+        },
         'hdpe_pk_tn.pdf': {
             title: 'Báo Giá Phụ Kiện HDPE Hàn Trong - Ngoài',
             file: 'https://drive.google.com/file/d/1LvEl7zPyk4By3BsdI4fvhnVmenLbaZPI/preview'

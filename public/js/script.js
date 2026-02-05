@@ -17,9 +17,9 @@ async function submitQuote(event) {
     event.preventDefault();
 
     // Configuration - Replace with your EmailJS IDs
-    const SERVICE_ID = "";
-    const TEMPLATE_ID = "";
-    const PUBLIC_KEY = "";
+    const SERVICE_ID = "service_0ixrcy8";
+    const TEMPLATE_ID = "template_76qo7nm";
+    const PUBLIC_KEY = "hvOajR8rqBEukekYj";
 
     // Initialize EmailJS (can also be done globally)
     emailjs.init(PUBLIC_KEY);
@@ -62,6 +62,21 @@ async function submitQuote(event) {
 
 
 
+// Function to update scroll margin top based on header height
+function updateScrollMargin() {
+    const header = document.querySelector('header');
+    if (header) {
+        const headerHeight = header.offsetHeight;
+        document.documentElement.style.setProperty('--scroll-margin-top', (headerHeight - 8 + 8) + 'px');
+    }
+}
+
+// Initial update and on resize/load
+window.addEventListener('load', updateScrollMargin);
+window.addEventListener('resize', updateScrollMargin);
+document.addEventListener('DOMContentLoaded', updateScrollMargin);
+
+
 window.onclick = function (event) {
     const modal = document.getElementById('quoteModal');
     if (event.target == modal) {
@@ -69,19 +84,5 @@ window.onclick = function (event) {
     }
 }
 
-// Smooth scroll
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        const href = this.getAttribute('href');
-        if (href !== '#') {
-            e.preventDefault();
-            const target = document.querySelector(href);
-            if (target) {
-                target.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            }
-        }
-    });
-});
+// Ensure native smooth scroll works well with the margin
+// (We can remove the manual JS scroll since CSS scroll-behavior: smooth is used)
