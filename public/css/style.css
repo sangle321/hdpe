@@ -206,6 +206,31 @@ section {
     margin-bottom: 0;
 }
 
+.about-actions {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.btn-catalog {
+    background: #1e3a8a;
+    color: white;
+    padding: 0.8rem 2.5rem;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 4px 6px -1px rgba(30, 58, 138, 0.2);
+}
+
+.btn-catalog:hover {
+    background: #1e40af;
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 10px 15px -3px rgba(30, 58, 138, 0.3);
+    color: white;
+}
+
 @media (max-width: 768px) {
     .about-content {
         padding: 2rem;
@@ -213,6 +238,10 @@ section {
         text-align: center;
         border-left: none;
         border-top: 6px solid #fb923c;
+    }
+
+    .about-actions {
+        justify-content: center;
     }
 }
 

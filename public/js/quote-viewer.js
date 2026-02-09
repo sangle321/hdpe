@@ -18,6 +18,10 @@ document.addEventListener('DOMContentLoaded', () => {
         'hdpe_van.pdf': {
             title: 'Báo Giá Van HDPE',
             file: 'https://drive.google.com/file/d/1-nS1Rpz2eL2LfkXt-Uj7vQfY_RX2wHxl/preview'
+        },
+        'catalog.pdf': {
+            title: 'Catalogue Sản Phẩm Trường Thọ QB',
+            file: 'https://drive.google.com/file/d/1vzfXVG0IeGA8aAsZeORZk2FyfytsCWHT/preview' // Placeholder link
         }
     };
 
